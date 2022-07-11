@@ -119,7 +119,7 @@ const loadGame = () => {
 const startTimer = () => {
 
     this.loop = setInterval(() => {
-        const currentTime = +timer.innerHTML; // o + na frente converte a string em number
+        const currentTime = Number(timer.innerHTML); // o + na frente converte a string em number
         timer.innerHTML = currentTime + 1;
 
     }, 1000);
